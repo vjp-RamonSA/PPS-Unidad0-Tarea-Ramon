@@ -1,28 +1,63 @@
-## CalculadoraPython
+# Unidad 0 - RA5. Tarea para entregar
 
-Bienvenido a la calculadora gráfica hecha en Python.
+Este repositorio recoge lo que he hecho en la tarea de la Unidad 0.  
+La idea es practicar con Markdown, Git/GitHub, GitHub Actions, GitHub Pages y Docker, y dejar todo documentado.
 
-## Ejecución
+---
 
-Para ejecutarlo tenemos que situarnos dentro de la carpeta del proyecto y ejecutar en el terminal de comandos python3 con el nombre del archivo .py
+## Índice
 
-cd 
+- [Introducción](#introducción)
+- [Objetivos](#objetivos)
+- [Resultados de aprendizaje](#resultados-de-aprendizaje)
+- [Git](git.md)
+- [GitHub Actions](gitActions.md)
+- [GitHub Pages](gitPages.md)
+- [Docker](docker.md)
+- [Conclusiones](conclusiones.md)
 
-CalculadoraPython
+---
 
-python3 src/calculadora.py
+## Introducción
 
-Si nos muestra un error `ModuleNotFoundError: No module named "tkinter"`, tenemos que instalar el paquete `python-tk`:
+He creado un repositorio en GitHub con nombre 'PPS-Unidad0-Tarea-Ramon'.  
+En él voy documentando cada parte de la tarea en archivos Markdown y al final se publica la documentación tanto en GitHub Pages como en un contenedor NGINX con Docker.  
 
-Para Python 3
+---
 
-sudo apt update
+## Objetivos
 
-sudo apt install python3-tk
+- Aprender a usar Markdown para documentar.  
+- Manejar Git y GitHub para controlar versiones.  
+- Configurar GitHub Actions para automatizar la documentación.  
+- Publicar la documentación en GitHub Pages.  
+- Levantar un contenedor NGINX con Docker para mostrar la documentación.  
+- Poner en práctica conceptos de SecDevOps.  
 
+---
 
-## Características
+## Resultados de aprendizaje
 
-- **Interfaz gráfica con Tkinter**
-- **Operaciones básicas** (+, -, *, /)
-- **Documentación generada con MkDocs**
+Esta tarea está relacionada con el resultado de aprendizaje RA5 y los criterios.  
+En resumen, se trata de aprender a documentar, automatizar, publicar y desplegar de forma segura.
+
+---
+
+## Navegación
+
+Aquí están los enlaces a cada parte de la documentación:
+
+- [**Git**](git.md)  
+  Sistema de control de versiones distribuido que permite gestionar el historial de cambios en proyectos de software. Facilita la colaboración entre desarrolladores, el seguimiento de modificaciones y la creación de ramas para trabajar en paralelo.
+
+- [**GitHub Actions**](gitActions.md)  
+  Herramienta de automatización dentro de GitHub que permite configurar flujos de trabajo (workflows) para tareas como pruebas, compilación y despliegue de proyectos. Se basa en archivos YAML donde se definen las acciones a ejecutar.
+
+- [**GitHub Pages**](gitPages.md)  
+  Servicio gratuito de GitHub que permite publicar sitios web directamente desde un repositorio. Es muy usado para documentación, portafolios o proyectos estáticos, y se integra fácilmente con Git.
+
+- [**Docke**r](docker.md)  
+  Plataforma que permite crear, ejecutar y administrar contenedores. Los contenedores encapsulan aplicaciones junto con sus dependencias, asegurando que se ejecuten de manera consistente en cualquier entorno.
+
+- [**Conclusiones**](conclusiones.md)  
+  Sección final donde se resumen los puntos más importantes aprendidos: la importancia de usar control de versiones, automatizar procesos, publicar proyectos fácilmente y garantizar entornos reproducibles con contenedores.
