@@ -26,7 +26,3 @@ sudo apt install python3-tk
 - **Interfaz gráfica con Tkinter**
 - **Operaciones básicas** (+, -, *, /)
 - **Documentación generada con MkDocs**
-
-## Problemas
-
-Si tienes algún problema [Contacto](contactoAdmin.md)
