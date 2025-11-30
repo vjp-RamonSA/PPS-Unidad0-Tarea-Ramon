@@ -13,7 +13,7 @@ El objetivo es que la tarea quede accesible en una página web estática alojada
 - Seleccionar la rama `gh-pages` como fuente de publicación.  
 - Guardar los cambios.  
 
-![](gitPages/1.png)
+![](img/gitPages/1.png)
 
 ---
 
@@ -40,7 +40,7 @@ nav:
 docs_dir: docs
 ```
 
-![](gitPages/2.png)
+![](img/gitPages/2.png)
 
 ---
 
@@ -49,7 +49,7 @@ docs_dir: docs
 
 - Verificar que aparecen los apartados: `index`, `git`, `gitActions`, `gitPages`, `docker`, `conclusiones`.  
 
-![](gitPages/3.png)
+![](img/gitPages/3.png)
 
 
 ## Conclusión

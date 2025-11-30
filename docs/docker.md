@@ -13,7 +13,7 @@ docker --version
 docker ps
 ```
 
-![](docker/1.png)
+![](img/docker/1.png)
 
 
 En caso de que no esté instalado Docker:
@@ -30,9 +30,9 @@ Generar el sitio web estático a partir de la documentación escrita en Markdown
 mkdocs build
 ```
 
-![](docker/2.png)
+![](img/docker/2.png)
 
-![](docker/3.png)
+![](img/docker/3.png)
 
 
 
@@ -50,7 +50,7 @@ docker run -d \
   nginx:latest
 ```
 
-![](docker/4.png)
+![](img/docker/4.png)
 
 
 ## 4. Verificación del contenedor
@@ -61,7 +61,7 @@ docker ps
 ```
 
 
-![](docker/5.png)
+![](img/docker/5.png)
 
 
 
@@ -71,7 +71,7 @@ Inspeccionamos la configuración del contenedor:
 docker inspect PPSUnidad0-Ramon
 ```
 
-![](docker/6.png)
+![](img/docker/6.png)
 
 
 
@@ -84,7 +84,7 @@ http://localhost:8085
 
 Se mostrará correctamente la documentación publicada por MkDocs a través del contenedor NGINX.
 
-![](docker/7.png)
+![](img/docker/7.png)
 
 
 ## Conclusión
