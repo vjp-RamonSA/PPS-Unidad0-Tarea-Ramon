@@ -89,7 +89,6 @@ Se otorgan permisos para que el workflow pueda desplegar la documentación:
 1. **Install dependencies** → Instala MkDocs.  
 1. **Deploy docs** → Publica la documentación en GitHub Pages usando `mkdocs gh-deploy`.
 
-
 ## 4. Conclusión
 
 La configuración de GitHub Actions permitió automatizar el proceso de construcción y despliegue de la documentación.  
