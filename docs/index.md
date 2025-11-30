@@ -20,7 +20,7 @@ La idea es practicar con Markdown, Git/GitHub, GitHub Actions, GitHub Pages y Do
 
 ## Introducción
 
-He creado un repositorio en GitHub con nombre 'PPS-Unidad0-Tarea-Ramon'.  
+He creado un repositorio en GitHub con nombre 'PPS-Unidad0-Tarea-Nombre'.  
 En él voy documentando cada parte de la tarea en archivos Markdown y al final se publica la documentación tanto en GitHub Pages como en un contenedor NGINX con Docker.  
 
 ---
@@ -32,7 +32,7 @@ En él voy documentando cada parte de la tarea en archivos Markdown y al final s
 - Configurar GitHub Actions para automatizar la documentación.  
 - Publicar la documentación en GitHub Pages.  
 - Levantar un contenedor NGINX con Docker para mostrar la documentación.  
-- Poner en práctica conceptos de SecDevOps.  
+- Poner en práctica conceptos de DevSecOps.  
 
 ---
 
