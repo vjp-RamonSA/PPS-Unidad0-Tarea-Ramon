@@ -34,8 +34,6 @@ mkdocs build
 
 ![](img/docker/3.png)
 
-
-
 ## 3. Creación del contenedor NGINX
 
 Se ha decidido utilizar un contenedor Docker simple con bind mount para montar la carpeta del repositorio en el contenedor.
@@ -52,7 +50,6 @@ docker run -d \
 
 ![](img/docker/4.png)
 
-
 ## 4. Verificación del contenedor
 Comprobamos que el contenedor está en ejecución:
 
@@ -60,9 +57,7 @@ Comprobamos que el contenedor está en ejecución:
 docker ps
 ```
 
-
 ![](img/docker/5.png)
-
 
 
 Inspeccionamos la configuración del contenedor:
@@ -72,8 +67,6 @@ docker inspect PPSUnidad0-Ramon
 ```
 
 ![](img/docker/6.png)
-
-
 
 ## 5. Visualización de la página
 Abrimos el navegador y accedemos a:
@@ -85,7 +78,6 @@ http://localhost:8085
 Se mostrará correctamente la documentación publicada por MkDocs a través del contenedor NGINX.
 
 ![](img/docker/7.png)
-
 
 ## Conclusión
 

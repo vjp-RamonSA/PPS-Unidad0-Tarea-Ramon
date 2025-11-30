@@ -13,7 +13,7 @@ En este documento se describe el proceso de creación del repositorio en **GitHu
     - Visibilidad: **Pública**.
     - Inicializamos de forma opcional con un archivo `README.md`.
 
- ![](img/git/1.png)
+![](img/git/1.png)
 
 ---
 
@@ -33,7 +33,7 @@ git clone https://github.com/vjp-RamonSA/PPS-Unidad0-Tarea-Ramon.git
 cd PPS-Unidad0-Tarea-Ramon
 ```
 
- ![](img/git/2.png)
+![](img/git/2.png)
 
 ## 4. Creación de la estructura de carpetas
 Crear la estructura que debe de tener el repositorio:
@@ -80,8 +80,8 @@ touch calculator/__init__.py \
 
 ```
 
- ![](img/git/3.png)
- ![](img/git/3.1.png)
+![](img/git/3.png)
+![](img/git/3.1.png)
 
 ## 5. Primer commit y push
 
@@ -98,7 +98,7 @@ git commit -am "Creación o modificación de archivos"
 git push origin main
 ```
 
- ![](img/git/4.png)
+![](img/git/4.png)
 
 
 ## 6.Añadir colaborador
@@ -108,7 +108,7 @@ Finalmente, añadimos al profesor como colaborador:
    * Añadimos el usuario: `PPSvjp`.
 
 
- ![](img/git/5.png)
+![](img/git/5.png)
 
 ## Conclusión
 
@@ -174,8 +174,7 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```
 
- ![](img/gitActions/1.png)
-
+![](img/gitActions/1.png)
 
 ## 3. Explicación paso a paso del Workflow MkDocs
 
