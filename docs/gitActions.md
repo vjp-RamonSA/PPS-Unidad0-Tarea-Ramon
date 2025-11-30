@@ -51,7 +51,7 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```
 
-![](gitActions/1.png)
+![](img/gitActions/1.png)
 
 ## 3. Explicación paso a paso del Workflow MkDocs
 
