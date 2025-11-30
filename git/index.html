@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Git - PPS-Unidad0-Tarea-Ramon</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../css/brands.min.css" rel="stylesheet">
+        <link href="../css/solid.min.css" rel="stylesheet">
+        <link href="../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">PPS-Unidad0-Tarea-Ramon</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href=".." class="nav-link">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./" class="nav-link active" aria-current="page">Git</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../gitActions/" class="nav-link">GitHub Actions</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../gitPages/" class="nav-link">GitHub Pages</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../docker/" class="nav-link">Docker</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../conclusiones/" class="nav-link">Conclusiones</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href=".." class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../gitActions/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#gestion-del-repositorio-con-git-y-github" class="nav-link">Gestión del repositorio con Git y GitHub</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#1-creacion-del-repositorio-en-github" class="nav-link">1. Creación del repositorio en GitHub</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#2-configuracion-inicial" class="nav-link">2. Configuración inicial</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#3-clonacion-del-repositorio" class="nav-link">3. Clonación del repositorio</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#4-creacion-de-la-estructura-de-carpetas" class="nav-link">4. Creación de la estructura de carpetas</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#5-primer-commit-y-push" class="nav-link">5. Primer commit y push</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#6anadir-colaborador" class="nav-link">6.Añadir colaborador</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#conclusion" class="nav-link">Conclusión</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#configuracion-de-workflow-para-mkdocs-en-github-actions" class="nav-link">Configuración de Workflow para MkDocs en GitHub Actions</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#1-ruta-de-directorios" class="nav-link">1. Ruta de directorios</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#2-contenido-del-archivo-creardocumentacionyml" class="nav-link">2. Contenido del archivo crearDocumentacion.yml</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#3-explicacion-paso-a-paso-del-workflow-mkdocs" class="nav-link">3. Explicación paso a paso del Workflow MkDocs</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#nombre-del-workflow" class="nav-link">Nombre del workflow</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#31-evento-que-lo-ejecuta" class="nav-link">3.1. Evento que lo ejecuta</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#32-permisos-necesarios" class="nav-link">3.2. Permisos necesarios</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#33-job-principal" class="nav-link">3.3. Job principal</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#34-pasos-del-workflow" class="nav-link">3.4. Pasos del workflow</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#4-conclusion" class="nav-link">4. Conclusión</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="gestion-del-repositorio-con-git-y-github">Gestión del repositorio con Git y GitHub</h1>
+<p>En este documento se describe el proceso de creación del repositorio en <strong>GitHub</strong> y las operaciones básicas realizadas con <strong>Git</strong> para la tarea de la Unidad 0.</p>
+<hr />
+<h2 id="1-creacion-del-repositorio-en-github">1. Creación del repositorio en GitHub</h2>
+<ol>
+<li>Accedemos a <a href="https://github.com">GitHub.com</a>.</li>
+<li>Seleccionamos la opción <strong>New Repository</strong>.</li>
+<li>Asignar el nombre <strong>PPS-Unidad0-Tarea-Tu_nombre</strong></li>
+<li>Configurar:<ul>
+<li>Descripción: <em>Repositorio para la tarea de la Unidad 0 del módulo PPS.</em></li>
+<li>Visibilidad: <strong>Pública</strong>.</li>
+<li>Inicializamos de forma opcional con un archivo <code>README.md</code>.</li>
+</ul>
+</li>
+</ol>
+<p><img alt="" src="../img/git/1.png" /></p>
+<hr />
+<h2 id="2-configuracion-inicial">2. Configuración inicial</h2>
+<p>Configuramos nuestro usuario y correo en Git (si no lo teníamos configurado previamente):</p>
+<pre><code class="language-bash">git config --global user.name &quot;tu_nombre&quot;
+git config --global user.email &quot;tu_correo&quot;
+</code></pre>
+<h2 id="3-clonacion-del-repositorio">3. Clonación del repositorio</h2>
+<p>Una vez creado el repositorio en GitHub, lo clonamos en nuestra máquina local:</p>
+<pre><code class="language-bash">git clone https://github.com/vjp-RamonSA/PPS-Unidad0-Tarea-Ramon.git
+cd PPS-Unidad0-Tarea-Ramon
+</code></pre>
+<p><img alt="" src="../img/git/2.png" /></p>
+<h2 id="4-creacion-de-la-estructura-de-carpetas">4. Creación de la estructura de carpetas</h2>
+<p>Crear la estructura que debe de tener el repositorio:</p>
+<pre><code class="language-bash">PPS-Unidad0-Tarea-Tu_Ramon  
+├── calculator/  
+│   ├── __init__.py  
+│   └── gui.py  
+├── docs/  
+│   └── index.md    
+│   └── git.md  
+│   └── gitActions.md   
+│   └── gitPages.md  
+│   └── docker.md  
+│   └── conclusiones.md 
+├── mkdocs.yml   
+├── requirements.txt  
+└── .github/  
+    └── workflows/  
+        └── CreacionDocumentacion.yml  
+</code></pre>
+<p>o utilizar dentro de la carpeta <code>PPS-Unidad0-Tarea-Ramon</code> para crear de forma automática y más cómoda:</p>
+<pre><code class="language-bash"># Crear las carpetas directamente
+mkdir -p calculator \
+         docs \
+         .github/workflows
+
+# Crear los archivos vacíos directamente
+touch calculator/__init__.py \
+      calculator/gui.py \
+      docs/index.md \
+      docs/git.md \
+      docs/gitActions.md \
+      docs/gitPages.md \
+      docs/docker.md \
+      docs/conclusiones.md \
+      mkdocs.yml \
+      requirements.txt \
+      .github/workflows/CreacionDocumentacion.yml
+
+</code></pre>
+<p><img alt="" src="../img/git/3.png" />
+<img alt="" src="../img/git/3.1.png" /></p>
+<h2 id="5-primer-commit-y-push">5. Primer commit y push</h2>
+<p>Añadimos los archivos al repositorio y realizamos el primer commit:</p>
+<pre><code class="language-bash">#Preparar todos los archivos modificados y nuevos para ser incluidos en el próximo commit.
+git add .
+
+#Crea un nuevo commit en el repositorio para guardar los cambios preparados.
+git commit -am &quot;Creación o modificación de archivos&quot;
+
+#Enviar los commits locales al repositorio remoto en la rama main.
+git push origin main
+</code></pre>
+<p><img alt="" src="../img/git/4.png" /></p>
+<h2 id="6anadir-colaborador">6.Añadir colaborador</h2>
+<p>Finalmente, añadimos al profesor como colaborador:
+   * Entramos en Settings &gt; Collaborators.
+   * Añadimos el usuario: <code>PPSvjp</code>.</p>
+<p><img alt="" src="../img/git/5.png" /></p>
+<h2 id="conclusion">Conclusión</h2>
+<p>La actividad ha servido para comprender de manera práctica cómo trabajar con Git y Markdown dentro de un proyecto real.  </p>
+<p>La creación del repositorio en GitHub permitió organizar el código y la documentación de forma estructurada, mientras que la integración con GitHub Actions y GitHub Pages mostró el valor de la automatización y la publicación continua.  </p>
+<p>En conjunto, la tarea refuerza la importancia de mantener un flujo de trabajo ordenado y documentado, facilitando la colaboración y el crecimiento del proyecto en futuras unidades.</p>
+<p>/gitActions.md</p>
+<h1 id="configuracion-de-workflow-para-mkdocs-en-github-actions">Configuración de Workflow para MkDocs en GitHub Actions</h1>
+<h2 id="1-ruta-de-directorios">1. Ruta de directorios</h2>
+<p>Crear la siguiente estructura de carpetas y archivo:</p>
+<pre><code>.github/
+└── workflows/
+    └── crearDocumentacion.yml
+</code></pre>
+<p>Ejecución del Workflow</p>
+<p>El workflow se ejecutará automáticamente cada vez que se haga un push a la rama <code>main</code> o <code>master</code>.</p>
+<h2 id="2-contenido-del-archivo-creardocumentacionyml">2. Contenido del archivo crearDocumentacion.yml</h2>
+<pre><code class="language-bash">name: Deploy MkDocs
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: pip install mkdocs
+
+      - name: Deploy docs
+        run: mkdocs gh-deploy --force
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+</code></pre>
+<p><img alt="" src="../img/gitActions/1.png" /></p>
+<h2 id="3-explicacion-paso-a-paso-del-workflow-mkdocs">3. Explicación paso a paso del Workflow MkDocs</h2>
+<h2 id="nombre-del-workflow">Nombre del workflow</h2>
+<ul>
+<li><strong><code>name: Deploy MkDocs</code></strong><br />
+  Define el nombre del workflow.</li>
+</ul>
+<hr />
+<h2 id="31-evento-que-lo-ejecuta">3.1. Evento que lo ejecuta</h2>
+<ul>
+<li><strong><code>on: push → branches: main</code></strong><br />
+  Indica que el workflow se ejecutará cuando haya un <strong>push</strong> en la rama <code>main</code>.</li>
+</ul>
+<hr />
+<h2 id="32-permisos-necesarios">3.2. Permisos necesarios</h2>
+<p>Se otorgan permisos para que el workflow pueda desplegar la documentación:</p>
+<ul>
+<li><strong><code>contents: write</code></strong> → Modificar contenido del repositorio.  </li>
+<li><strong><code>pages: write</code></strong> → Desplegar en GitHub Pages.  </li>
+<li><strong><code>id-token: write</code></strong> → Autenticación segura.</li>
+</ul>
+<hr />
+<h2 id="33-job-principal">3.3. Job principal</h2>
+<ul>
+<li><strong><code>jobs → deploy → runs-on: ubuntu-latest</code></strong><br />
+  El job se ejecuta en un entorno <strong>Ubuntu</strong>.</li>
+</ul>
+<hr />
+<h2 id="34-pasos-del-workflow">3.4. Pasos del workflow</h2>
+<ol>
+<li><strong>Checkout Repo</strong> → Clona el repositorio.  </li>
+<li><strong>Set up Python</strong> → Configura Python en la versión 3.x.  </li>
+<li><strong>Install dependencies</strong> → Instala MkDocs.  </li>
+<li><strong>Deploy docs</strong> → Publica la documentación en GitHub Pages usando <code>mkdocs gh-deploy</code>.</li>
+</ol>
+<h2 id="4-conclusion">4. Conclusión</h2>
+<p>La configuración de GitHub Actions permitió automatizar el proceso de construcción y despliegue de la documentación.  </p>
+<p>Gracias a este flujo de trabajo, cada vez que se actualiza el repositorio la documentación se genera y publica de forma automática en GitHub Pages, asegurando que esté siempre disponible y actualizada sin necesidad de intervención manual.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js"></script>
+        <script src="../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
