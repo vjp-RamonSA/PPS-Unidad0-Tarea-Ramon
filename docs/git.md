@@ -17,7 +17,7 @@ En este documento se describe el proceso de creación del repositorio en **GitHu
 
 ---
 
-## 1.Configuración inicial
+## 2. Configuración inicial
 Configuramos nuestro usuario y correo en Git (si no lo teníamos configurado previamente):
 
 ```bash
@@ -25,7 +25,7 @@ git config --global user.name "tu_nombre"
 git config --global user.email "tu_correo"
 ```
 
-## 1. Clonación del repositorio
+## 3. Clonación del repositorio
 Una vez creado el repositorio en GitHub, lo clonamos en nuestra máquina local:
 
 ```bash
@@ -35,7 +35,7 @@ cd PPS-Unidad0-Tarea-Ramon
 
  ![](img/git/2.png)
 
-## 1. Creación de la estructura de carpetas
+## 4. Creación de la estructura de carpetas
 Crear la estructura que debe de tener el repositorio:
 
 ```bash
@@ -83,7 +83,8 @@ touch calculator/__init__.py \
  ![](img/git/3.png)
  ![](img/git/3.1.png)
 
-1. Primer commit y push
+## 5. Primer commit y push
+
 Añadimos los archivos al repositorio y realizamos el primer commit:
 
 ```bash
@@ -100,7 +101,7 @@ git push origin main
  ![](img/git/4.png)
 
 
-## 1.Añadir colaborador
+## 6.Añadir colaborador
 
 Finalmente, añadimos al profesor como colaborador:
    * Entramos en Settings > Collaborators.
