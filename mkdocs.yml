@@ -1,4 +1,9 @@
-site_name: PPS-Unidad0-Tarea-sanchez-aceras-ramon
+site_name: PPS-Unidad0-Tarea-Ramon
 nav:
-  - Home: index.md
+  - Inicio: index.md
+  - Git: git.md
+  - GitHub Actions: gitActions.md
+  - GitHub Pages: gitPages.md
+  - Docker: docker.md
+  - Conclusiones: conclusiones.md
 docs_dir: docs
