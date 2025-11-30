@@ -52,7 +52,7 @@ docs_dir: docs
 ![](gitPages/3.png)
 
 
-##Conclusión
+## Conclusión
 La configuración de **GitHub Pages** permite publicar la documentación de forma sencilla y accesible.  
 
 Con este proceso se asegura que el repositorio esté disponible en la web y actualizado automáticamente con cada cambio realizado.
